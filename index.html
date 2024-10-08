@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Hyderabad Dashboard - Bird Atlas </title>
+    <title>HYD - Priority for Dry Season Atlas </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/birdcount.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -19,10 +19,40 @@
     <script>
         const API_KEY = "AIzaSyBlnHxrHYOApEJddSR5EwWP6X8gcaQh-wQ"
         const MAP_DATA = {
-            feb25: {
+            july: {
                 mapSpreadSheetId: '19s5IfEnrFiJYswz8yQdSJ0dUugemfwXNKsIYC8LW_Z8',
-                name: 'Feb25',
-                mapContainerId: 'feb25'
+                name: 'July',
+                mapContainerId: 'july'
+            },
+            february: {
+                mapSpreadSheetId: '19s5IfEnrFiJYswz8yQdSJ0dUugemfwXNKsIYC8LW_Z8',
+                name: 'February',
+                mapContainerId: 'february'
+            },
+            feb21: {
+                mapSpreadSheetId: '19s5IfEnrFiJYswz8yQdSJ0dUugemfwXNKsIYC8LW_Z8',
+                name: 'Feb21',
+                mapContainerId: 'feb21'
+            },
+            feb22: {
+                mapSpreadSheetId: '19s5IfEnrFiJYswz8yQdSJ0dUugemfwXNKsIYC8LW_Z8',
+                name: 'Feb22',
+                mapContainerId: 'feb22'
+            },
+            jul22: {
+                mapSpreadSheetId: '19s5IfEnrFiJYswz8yQdSJ0dUugemfwXNKsIYC8LW_Z8',
+                name: 'Jul22',
+                mapContainerId: 'jul22'
+            },
+            feb23: {
+                mapSpreadSheetId: '1LxetXoe6izWH-yDM0bDAMpfocV9tRP_yfLB0PlbEa4U',
+                name: 'Feb23',
+                mapContainerId: 'feb23'
+            },
+            jun23: {
+                mapSpreadSheetId: '19s5IfEnrFiJYswz8yQdSJ0dUugemfwXNKsIYC8LW_Z8',
+                name: 'Jun23',
+                mapContainerId: 'jun23'
             }            
             
         };
@@ -46,12 +76,30 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#/">Hyderabad City Bird Atlas-</a>
+            <a class="navbar-brand" href="#/">Hyderabad City Bird Atlas</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav nav-pills">
                 <li role="presentation">
-                    <a href="#/hba25/feb25" role="tab" data-target="#feb25" data-toggle="tab">Feb 2025</a>
+                    <a href="#/kovai/february" role="tab" data-target="#february" data-toggle="tab">Feb 2020</a>
+                </li>
+                <li role="presentation">
+                    <a href="#/kovai/july" role="tab" data-target="#july" data-toggle="tab">Jul 2020</a>
+                </li>
+                <li role="presentation">
+                    <a href="#/kovai/feb21" role="tab" data-target="#feb21" data-toggle="tab">Feb 2021</a>
+                </li>
+                 <li role="presentation">
+                    <a href="#/kovai/feb22" role="tab" data-target="#feb22" data-toggle="tab">Feb 2022</a>
+                </li>
+                <li role="presentation">
+                    <a href="#/kovai/jul22" role="tab" data-target="#jul22" data-toggle="tab">Jul 2022</a>
+                </li>
+                <li role="presentation">
+                    <a href="#/kovai/feb23" role="tab" data-target="#feb23" data-toggle="tab">Feb 2023</a>
+                </li>
+                <li role="presentation">
+                    <a href="#/kovai/jun23" role="tab" data-target="#jun23" data-toggle="tab">Jun 2023</a>
                 </li>
             </ul>
         </div>
@@ -59,7 +107,13 @@
 </nav>
 <div class="map-parent container-fluid">
     <div class="tab-content">
-         <div role="tabpanel" class="tab-pane map-container" id="feb25"></div>
+        <div role="tabpanel" class="tab-pane map-container" id="february"></div>
+        <div role="tabpanel" class="tab-pane map-container" id="july"></div>
+        <div role="tabpanel" class="tab-pane map-container" id="feb21"></div>
+        <div role="tabpanel" class="tab-pane map-container" id="feb22"></div>
+        <div role="tabpanel" class="tab-pane map-container" id="jul22"></div>
+        <div role="tabpanel" class="tab-pane map-container" id="feb23"></div>
+        <div role="tabpanel" class="tab-pane map-container" id="jun23"></div>
       </div>
 </div>
 <div class="modal fade page-alert-box" tabindex="-1" role="dialog">
