@@ -17,7 +17,7 @@
             this.redirect(first);
         });
 
-        this.get('#/hba/:district', function (context) {
+        this.get('#/kovai/:district', function (context) {
             const district = this.params['district'],
                 map = getOrCreateMap(district);
             $('ul.nav a[data-target="#' + district + '"]').tab('show');
