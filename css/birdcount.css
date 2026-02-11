@@ -29,4 +29,5 @@ html, body, .map-parent, .map-parent>div, .map-container  {
 .settings-dropdown label {
     font-size: small;
     font-weight: normal;
+    color: #ffffff; 
 }
