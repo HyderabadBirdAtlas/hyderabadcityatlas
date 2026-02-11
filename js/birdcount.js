@@ -304,7 +304,8 @@ const BirdCount = (function () {
                         boxStyle: {
                             textAlign: "center",
                             fontSize: "7pt",
-                            width: "60px"
+                            width: "60px",
+                            color: "#ffffff"
                         },
                         disableAutoPan: true,
                         pixelOffset: new google.maps.Size(-30, -5),
@@ -567,3 +568,4 @@ const BirdCount = (function () {
         }
     };
 })();
+
