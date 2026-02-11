@@ -1,5 +1,6 @@
 html, body, .map-parent, .map-parent>div, .map-container  {
     height: 100%;
+    color: #ddd;
 }
 
 .map-parent {
