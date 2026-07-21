@@ -109,7 +109,7 @@ const BirdCount = (function () {
                 case '-1':
                     return '#FF0000';    
                 default:
-                    return '#202020';
+                    return '#007FFF';
             }
         },
 
